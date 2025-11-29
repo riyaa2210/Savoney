@@ -5,8 +5,9 @@ The project focuses on clarity, minimalism, and practical usability.
  #Live Demo and Video
 
 Live Project:[https://savoney-f6588b6e.base44.app/](https://savoney-f6588b6e.base44.app/)
+---
 Demo Video:[https://youtu.be/JoAmVrQo3QQ?si=OTsa-hsBw7I3MJjk](https://youtu.be/JoAmVrQo3QQ?si=OTsa-hsBw7I3MJjk)
-
+---
  #Features
 1. AI-Based Portfolio Recommendations-
 Analyses user goals, risk profiles, and preferences to suggest portfolio allocations.
