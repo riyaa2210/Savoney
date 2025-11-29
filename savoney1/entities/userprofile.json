@@ -1,0 +1,103 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "pan_number": {
+      "type": "string"
+    },
+    "aadhaar_last_four": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string",
+      "enum": [
+        "salaried",
+        "self_employed",
+        "business_owner",
+        "retired",
+        "student",
+        "other"
+      ]
+    },
+    "annual_income": {
+      "type": "string",
+      "enum": [
+        "below_5l",
+        "5l_10l",
+        "10l_25l",
+        "25l_50l",
+        "above_50l"
+      ]
+    },
+    "investment_horizon": {
+      "type": "string",
+      "enum": [
+        "short_term",
+        "medium_term",
+        "long_term"
+      ]
+    },
+    "risk_tolerance": {
+      "type": "string",
+      "enum": [
+        "conservative",
+        "moderate",
+        "aggressive"
+      ]
+    },
+    "investment_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_score": {
+      "type": "number"
+    },
+    "portfolio_allocation": {
+      "type": "object",
+      "properties": {
+        "equity": {
+          "type": "number"
+        },
+        "debt": {
+          "type": "number"
+        },
+        "gold": {
+          "type": "number"
+        },
+        "international": {
+          "type": "number"
+        }
+      }
+    },
+    "kyc_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_progress",
+        "verified",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "onboarding_complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "theme_preference": {
+      "type": "string",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "light"
+    }
+  },
+  "required": [
+    "full_name"
+  ]
+}
